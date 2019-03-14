@@ -1,0 +1,23 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-align="center">
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- List of Text Items -->
+<ion-list>
+  <ion-item>
+    <ion-label position="floating">username</ion-label>
+  <ion-input [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">password</ion-label>
+    <ion-input [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button (click)="onLogin()" expand="full">Login</ion-button>
+</ion-list>
+</ion-content>
